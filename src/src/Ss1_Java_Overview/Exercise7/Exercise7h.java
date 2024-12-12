@@ -6,5 +6,7 @@ public class Exercise7h {
         a+=a++ + ++a;
         //10+10+12
         System.out.println("a= " + a);
+        //đã update
+
     }
 }
