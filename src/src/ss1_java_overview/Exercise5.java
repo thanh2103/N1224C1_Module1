@@ -1,4 +1,4 @@
-package Ss1_Java_Overview;
+package ss1_java_overview;
 
 import java.util.Scanner;
 
@@ -13,9 +13,9 @@ public class Exercise5 {
         double C = 2 * Math.PI * r;
 
         //Tính diện tích
-        double A=Math.PI*r*r;
+        double A = Math.PI * r * r;
 
-        System.out.println("Chu vi hình tròn là: "+C);
-        System.out.println("Diện tích hình tròn là: "+A);
+        System.out.println("Chu vi hình tròn là: " + C);
+        System.out.println("Diện tích hình tròn là: " + A);
     }
 }

@@ -1,4 +1,4 @@
-package Ss1_Java_Overview;
+package ss1_java_overview;
 
 import java.util.Scanner;
 

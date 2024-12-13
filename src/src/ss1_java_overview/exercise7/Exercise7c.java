@@ -1,4 +1,4 @@
-package Ss1_Java_Overview.Exercise7;
+package ss1_java_overview.exercise7;
 
 public class Exercise7c {
     public static void main(String[] args) {
