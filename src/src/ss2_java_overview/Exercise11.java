@@ -21,9 +21,9 @@ public class Exercise11 {
         if (month < 1 || month > 12) {
             System.out.println("Tháng không hợp lệ");
         }
-        boolean isleapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+        boolean isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
         if (month == 2) {
-            if (isleapYear) {
+            if (isLeapYear) {
                 if (day > 29) {
                     System.out.println("Ngày không hợp lệ");
                     return;
@@ -41,24 +41,24 @@ public class Exercise11 {
         int nextYear = year;
 
         nextDay++;
-        if ((nextDay > 31) || (month == 2 && nextDay > (isleapYear ? 29 : 28)) ||
-                (month == 4 || month == 6 || month == 9 || month == 11 || month == 12) && nextDay > 30){
-            nextDay=1;
+        if ((nextDay > 31) || (month == 2 && nextDay > (isLeapYear ? 29 : 28)) ||
+                (month == 4 || month == 6 || month == 9 || month == 11 || month == 12) && nextDay > 30) {
+            nextDay = 1;
             nextMonth++;
         }
 
-        if(nextMonth>12){
-            nextMonth=1;
+        if (nextMonth > 12) {
+            nextMonth = 1;
             nextYear++;
         }
-        System.out.printf("Ngày kế tiếp: %d/%d/%d",nextDay,nextMonth,nextYear);
+        System.out.printf("Ngày kế tiếp: %d/%d/%d", nextDay, nextMonth, nextYear);
 
-        int previousDay=day;
-        int previousMonth=month;
-        int previousYear=year;
+        int previousDay = day;
+        int previousMonth = month;
+        int previousYear = year;
         previousDay--;
 
-        if(previousDay<1) {
+        if (previousDay < 1) {
             previousMonth--;
             if (previousMonth < 1) {
                 previousYear--;
@@ -67,7 +67,7 @@ public class Exercise11 {
             if (previousDay < 1 && previousMonth == 4 || previousMonth == 6 || previousMonth == 9 || previousMonth == 11 || previousMonth == 12) {
                 previousDay = 30;
             } else if (previousDay == 2) {
-                if (isleapYear) {
+                if (isLeapYear) {
                     previousDay = 29;
                 } else {
                     previousDay = 28;
@@ -77,6 +77,6 @@ public class Exercise11 {
             }
         }
         //
-        System.out.printf("Ngày trước đó là: %d/%d/%d",previousDay,previousMonth,previousYear);
+        System.out.printf("Ngày trước đó là: %d/%d/%d", previousDay, previousMonth, previousYear);
     }
 }
