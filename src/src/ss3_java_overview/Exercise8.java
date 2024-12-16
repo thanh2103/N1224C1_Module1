@@ -9,10 +9,10 @@ public class Exercise8 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập n: ");
         int n = scanner.nextInt();
-        int a=0;
-        while (a<n){
+        int a = 0;
+        while (a < n) {
             System.out.println(a);
-            a=a*2+1;
+            a = a * 2 + 1;
         }
     }
 }
