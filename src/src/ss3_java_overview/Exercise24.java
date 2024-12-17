@@ -14,7 +14,7 @@ public class Exercise24 {
         int tienThoiLai = tra - gia;
         int menhGiaTien;
 
-        for (int i = tienThoiLai; i < 1; i++) {
+        for (int i = tienThoiLai; i < 1; i++) {//
             int heSo = (int) Math.pow(10, i);
             menhGiaTien = 5000 * heSo;
             if (tienThoiLai > menhGiaTien) {
