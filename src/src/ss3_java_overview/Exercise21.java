@@ -65,7 +65,7 @@ public class Exercise21 {
         System.out.println();
         System.out.println("Câu b- cách 2: ");
 
- //--------------------------------------------------------------
+        //--------------------------------------------------------------
         System.out.println();
         System.out.println("Câu c: ");
 
