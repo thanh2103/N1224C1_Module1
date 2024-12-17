@@ -25,7 +25,7 @@ public class Exercise20 {
             giaiThuaC *= i;
         }
         int kq = giaiThuaA + giaiThuaB + giaiThuaC;
-        System.out.printf("%d + %d + %d = %d", giaiThuaA, giaiThuaB, giaiThuaC, kq);
+        System.out.printf("%d + %d + %d = %d", giaiThuaA, giaiThuaB, giaiThuaC, kq);//
     }
 
 }
