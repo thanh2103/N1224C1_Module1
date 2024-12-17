@@ -11,7 +11,7 @@ public class Exercise24 {
         System.out.println("Nhập số tiền trả: ");
         int tra = scanner.nextInt();
 
-        int tienThoiLai = gia - tra;
+        int tienThoiLai = tra - gia;
         int menhGiaTien;
 
         for (int i = tienThoiLai; i < 1; i++) {

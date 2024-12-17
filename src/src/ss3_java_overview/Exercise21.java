@@ -8,23 +8,6 @@ public class Exercise21 {
         System.out.println("Nhập n: ");
         int n = scanner.nextInt();
 
-//        String a = String.valueOf(n);
-//       // String b = "";
-//        while (n > 0) {
-//            a += n % 10;
-//            n /= 10;
-//        }
-//        System.out.println(a);
-//        while (n > 0) {
-//            b = n % 10 + b;
-//            n /= 10;
-//        }
-// //       System.out.println(b);
-//        if (==n) {
-//            System.out.println(n + " Là số đối xứng");
-//        } else {
-//            System.out.println("Không phải số đối xứng");
-//        }
         System.out.println("Câu a: ");
         String str = String.valueOf(n);
         boolean isSoDoiXung = true;
@@ -62,10 +45,7 @@ public class Exercise21 {
         }
 //--------------------------------------------------------------
 
-        System.out.println();
-        System.out.println("Câu b- cách 2: ");
 
-        //--------------------------------------------------------------
         System.out.println();
         System.out.println("Câu c: ");
 
