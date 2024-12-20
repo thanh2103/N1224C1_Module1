@@ -2,7 +2,7 @@ package ss4_java_overview;
 
 import java.util.Scanner;
 
-public class Exercise7 {
+public class Exercise8 {
     static String tenNV1;
     static int tuoi1;
     static String gioiTinh1;
@@ -144,86 +144,50 @@ public class Exercise7 {
         System.out.println("điểm trung bình: " + diemTBTotNghiep5);
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhập số lượng nhân viên muốn nhập: ");
-        int n = scanner.nextInt();
-
-        switch (n) {
-            case 1:
-                System.out.println("Nhân viên thứ 1");
-                nhapTT1();
-                System.out.println("Thông tin nhân viên thứ 2");
-                xuatTT1();
-                break;
-            case 2:
-                System.out.println("Nhân viên thứ 1");
-                nhapTT1();
-                System.out.println("Nhân viên thứ 2");
-                nhapTT2();
-                System.out.println("Thông tin nhân viên thứ 1");
-                xuatTT1();
-                System.out.println("Thông tin nhân viên thứ 2");
-                xuatTT2();
-                break;
-            case 3:
-                System.out.println("Nhân viên thứ 1");
-                nhapTT1();
-                System.out.println("Nhân viên thứ 2");
-                nhapTT2();
-                System.out.println("Nhân viên thứ 3");
-                nhapTT3();
-                System.out.println("Thông tin nhân viên thứ 1");
-                xuatTT1();
-                System.out.println("Thông tin nhân viên thứ 2");
-                xuatTT2();
-                System.out.println("Thông tin nhân viên thứ 3");
-                xuatTT3();
-                break;
-            case 4:
-                System.out.println("Nhân viên thứ 1");
-                nhapTT1();
-                System.out.println("Nhân viên thứ 2");
-                nhapTT2();
-                System.out.println("Nhân viên thứ 3");
-                nhapTT3();
-                System.out.println("Nhân viên thứ 4");
-                nhapTT4();
-                System.out.println("Thông tin nhân viên thứ 1");
-                xuatTT1();
-                System.out.println("Thông tin nhân viên thứ 2");
-                xuatTT2();
-                System.out.println("Thông tin nhân viên thứ 3");
-                xuatTT3();
-                System.out.println("Thông tin nhân viên thứ 4");
-                xuatTT4();
-                break;
-            case 5:
-                System.out.println("Nhân viên thứ 1");
-                nhapTT1();
-                System.out.println("Nhân viên thứ 2");
-                nhapTT2();
-                System.out.println("Nhân viên thứ 3");
-                nhapTT3();
-                System.out.println("Nhân viên thứ 4");
-                nhapTT4();
-                System.out.println("Nhân viên thứ 5");
-                nhapTT5();
-                System.out.println("Thông tin nhân viên thứ 1");
-                xuatTT1();
-                System.out.println("Thông tin nhân viên thứ 2");
-                xuatTT2();
-                System.out.println("Thông tin nhân viên thứ 3");
-                xuatTT3();
-                System.out.println("Thông tin nhân viên thứ 4");
-                xuatTT4();
-                System.out.println("Thông tin nhân viên thứ 5");
-                xuatTT5();
-                break;
-            default:
-                return;
+    static boolean kiemTra() {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Bạn có muốn nhập tiếp tục nhập thông tin không?(y/n)");
+        String input = s.nextLine();
+        if (input.equals("y")) {
+            return true;
+        } else {
+            return false;
         }
-
     }
 
+    public static void main(String[] args) {
+        nhapTT1();
+        if (kiemTra()) {
+            nhapTT2();
+            if (kiemTra()) {
+                nhapTT3();
+                if (kiemTra()) {
+                    nhapTT4();
+                    if (kiemTra()) {
+                        nhapTT5();
+
+                        xuatTT1();
+                        xuatTT2();
+                        xuatTT3();
+                        xuatTT4();
+                        xuatTT5();
+                    } else {
+                        xuatTT1();
+                        xuatTT2();
+                        xuatTT3();
+                        xuatTT4();
+                    }
+                } else {
+                    xuatTT1();
+                    xuatTT2();
+                    xuatTT3();
+                }
+            } else {
+                xuatTT1();
+                xuatTT2();
+            }
+        } else {
+            xuatTT1();
+        }
+    }
 }
