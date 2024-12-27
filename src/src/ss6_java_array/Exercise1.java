@@ -1,7 +1,5 @@
-package ss6_java_arraylist;
+package ss6_java_array;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Exercise1 {
