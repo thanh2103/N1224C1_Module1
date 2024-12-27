@@ -37,7 +37,7 @@ public class Exercise2 {
                 diemTB[i] = Double.parseDouble(sc.nextLine());
                 if (diemTB[i] < 0 || diemTB[i] > 10) {
                     System.out.println("Điểm trung bình không hợp lệ, vui lòng nhập lại!");
-                }
+                }//
             } while (diemTB[i] < 0 || diemTB[i] > 10);
         }
     }
