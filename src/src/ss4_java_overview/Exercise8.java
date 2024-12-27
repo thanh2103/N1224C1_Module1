@@ -148,7 +148,7 @@ public class Exercise8 {
         Scanner s = new Scanner(System.in);
         System.out.println("Bạn có muốn nhập tiếp tục nhập thông tin không?(y/n)");
         String input = s.nextLine();
-        if (input.equals("y")) {
+        if (input.equalsIgnoreCase("y")) {
             return true;
         } else {
             return false;

@@ -8,6 +8,8 @@ public class Exercise1 {
     public static char toLowerCase(char s) {
         if (s >= 'A' && s <= 'Z') {
             s += 32;
+            //next:
+            //charArt(0):
         }
         return s;
     }
@@ -55,8 +57,7 @@ public class Exercise1 {
     public static int min(int a, int b, int c, int d) {
         int min = Math.min(a, b);
         min=Math.min(min,c);
-        min=Math.min(min,d);
-        return min;
+        return Math.min(min,d);
     }
 
     public static void main(String[] args) {

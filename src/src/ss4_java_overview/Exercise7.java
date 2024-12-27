@@ -220,8 +220,6 @@ public class Exercise7 {
                 System.out.println("Thông tin nhân viên thứ 5");
                 xuatTT5();
                 break;
-            default:
-                return;
         }
 
     }
